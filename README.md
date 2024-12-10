@@ -10,6 +10,8 @@ To set up and run the application locally, follow these steps:
      git clone https://github.com/NorhaneCh/Passport-Recognition.git
      cd Passport-Recognition
 
+**Open the project in vscode and run the terminal:**
+   
 2. **Activate the virtual environment:**
 
    ```bash
