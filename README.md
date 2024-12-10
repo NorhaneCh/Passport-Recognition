@@ -10,8 +10,19 @@ To set up and run the application locally, follow these steps:
      git clone https://github.com/NorhaneCh/Passport-Recognition.git
      cd Passport-Recognition
 
-2. **Activate the virtual environment**
+2. **Activate the virtual environment:**
 
    Run the following command to activate the virtual environment:
    ```bash
    .\app\Scripts\Activate.ps1
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install streamlit ollama
+
+3. **Run the app:**
+
+   ```bash
+   cd app
+   streamlit run main.py
