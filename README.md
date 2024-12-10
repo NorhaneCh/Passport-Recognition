@@ -10,19 +10,19 @@ To set up and run the application locally, follow these steps:
      git clone https://github.com/NorhaneCh/Passport-Recognition.git
      cd Passport-Recognition
 
-**Open the project in vscode and run the terminal:**
-   
-2. **Activate the virtual environment:**
+2. **Open the project folder in Visual Studio Code, then open the integrated terminal**
+
+3. **Activate the virtual environment:**
 
    ```bash
    .\app\Scripts\Activate.ps1
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
    ```bash
    pip install streamlit ollama
 
-3. **Run the app:**
+5. **Run the app:**
 
    ```bash
    cd app
