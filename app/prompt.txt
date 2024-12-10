@@ -1,0 +1,20 @@
+"""Analyze the provided image and extract the relevant information to complete the following JSON structure. 
+For each field in the JSON, provide the corresponding value from the image. If a field is not present in the image, leave it blank. 
+Do not infer or add values not explicitly present in the image. Here is the JSON structure to complete:
+
+{
+  "identityPaper": boolean,
+  "identityPaperScore": real,
+  "identityPaperType": "string",
+  "countryOfIssuer": "string",
+  "Surname": "string",
+  "GivenName": "string",
+  "DateOfBirth": "date",
+  "Nationality": "string",
+  "DateOfIssued": "date",
+  "DateOfExpiry": "date",
+  "PersonalNo": "ID number",
+  "note": "string"
+}
+
+Pay special attention to formatting and accuracy. Extract the data as is from the image and populate the JSON accurately. Use the attached image to identify the values."""
