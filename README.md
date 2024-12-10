@@ -4,7 +4,14 @@
 
 To set up and run the application locally, follow these steps:
 
-1. **Activate the virtual environment**  
+1. **Clone the repository:**
+
+   Run the following command to activate the virtual environment:
+   ```bash
+   .\app\Scripts\Activate.ps1
+
+2. **Activate the virtual environment**
+
    Run the following command to activate the virtual environment:
    ```bash
    .\app\Scripts\Activate.ps1
