@@ -13,7 +13,7 @@ import os
 st.write(f"Current working directory: {os.getcwd()}")
 st.write(f"Prompt file path: {os.path.join(os.getcwd(), 'prompt.txt')}")
 # Read the prompt content from a file
-with open('prompt.txt', 'r', encoding='utf-8') as file:
+with open('/app/prompt.txt', 'r', encoding='utf-8') as file:
     prompt_content = file.read()
 
 # Upload image
