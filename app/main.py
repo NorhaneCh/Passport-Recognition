@@ -14,8 +14,12 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 prompt_file_path = os.path.join(script_dir, 'prompt.txt')
 
 # Read the prompt content from a file
-with open('prompt_file_path', 'r', encoding='utf-8') as file:
-    prompt_content = file.read()
+try:
+    with open(prompt_file_path, 'r', encoding='utf-8') as file:
+        prompt_content = file.read()
+    st.write("Prompt content loaded successfully.")
+except FileNotFoundError:
+    st.write(f"Error: {prompt_file_path} not found.")
 
 # Upload image
 uploaded_file = st.file_uploader(
