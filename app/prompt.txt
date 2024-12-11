@@ -1,20 +1,25 @@
-"""Analyze the provided image and extract the relevant information to complete the following JSON structure. 
-For each field in the JSON, provide the corresponding value from the image. If a field is not present in the image, leave it blank. 
-Do not infer or add values not explicitly present in the image. Here is the JSON structure to complete:
+"""
+Carefully analyze the provided image and extract only the explicitly visible information to populate the following JSON structure. For each field in the JSON, provide the corresponding value as it appears in the image, ensuring the formatting and details are accurate. If a field is not present in the image, leave it blank without making assumptions or inferences. The JSON structure to populate is as follows:
 
 {
-  "identityPaper": boolean,
-  "identityPaperScore": real,
-  "identityPaperType": "string",
-  "countryOfIssuer": "string",
-  "Surname": "string",
-  "GivenName": "string",
-  "DateOfBirth": "date",
-  "Nationality": "string",
-  "DateOfIssued": "date",
-  "DateOfExpiry": "date",
-  "PersonalNo": "ID number",
-  "note": "string"
+  "identityPaper": boolean,                 // True if the document is an identity paper; false otherwise
+  "identityPaperScore": real,               // Confidence score for the document classification: A value between 0 and 1 (e.g., 0.95), representing the confidence level
+  "identityPaperType": "string",            // Type of the document (e.g., Passport, ID Card)
+  "countryOfIssuer": "string",              // Country issuing the document
+  "Surname": "string",                      // Last name as shown in the document
+  "GivenName": "string",                    // First name as shown in the document
+  "DateOfBirth": "date",                    // Date of birth: Use the format YYYY-MM-DD. If the day and month are not provided in the document, include only the year in the format YYYY
+  "Nationality": "string",                  // Nationality of the document holder
+  "DateOfIssued": "date",                   // Date the document was issued (format: YYYY-MM-DD)
+  "DateOfExpiry": "date",                   // Expiration date of the document (format: YYYY-MM-DD)
+  "PersonalNo": "ID number",                // Personal identification number or equivalent
+  "note": "string"                          // Any additional notes or remarks
 }
 
-Pay special attention to formatting and accuracy. Extract the data as is from the image and populate the JSON accurately. Use the attached image to identify the values."""
+Instructions:
+1. Extract the information exactly as displayed in the image, ensuring accuracy and consistency with the format specified in the JSON structure.
+2. If a field is not explicitly visible or readable in the image, leave it blank in the JSON output.
+3. Do not add or infer any values not directly supported by the content of the image. 
+
+Objective: Populate the JSON structure with complete and accurate data derived from the image, adhering strictly to the instructions above.
+"""
