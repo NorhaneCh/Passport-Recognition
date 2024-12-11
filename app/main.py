@@ -7,6 +7,11 @@ from PIL import Image
 # Streamlit app layout
 st.title("Passport Recognition with Ollama Vision")
 
+import os
+
+# Print the current working directory and the file path
+st.write(f"Current working directory: {os.getcwd()}")
+st.write(f"Prompt file path: {os.path.join(os.getcwd(), 'prompt.txt')}")
 # Read the prompt content from a file
 with open('prompt.txt', 'r', encoding='utf-8') as file:
     prompt_content = file.read()
